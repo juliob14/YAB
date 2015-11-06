@@ -1,7 +1,8 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
-
+# Importar routes del módulo CRUD
+*      /admin              module:crud
 # Home page
 GET     /                                       Application.index
 GET     /posts/{id}                             Application.show
