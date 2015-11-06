@@ -3,6 +3,8 @@
 # ~~~~
 # Importar routes del módulo CRUD
 *      /admin              module:crud
+# Importar rutas de Secure
+*       /                                       module:secure
 # Home page
 GET     /                                       Application.index
 GET     /posts/{id}                             Application.show
