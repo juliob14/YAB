@@ -33,5 +33,11 @@ public List<Comment> comments;
     this.save();
     return this;
 }
+ public Post previous() {
+    return Post.find("postedAt < ? order by postedAt desc", postedAt).first();
+}
  
+public Post next() {
+    return Post.find("postedAt > ? order by postedAt asc", postedAt).first();
+}
 }
